@@ -1,0 +1,3 @@
+com\akotti\apigateway\filter\JwtAuthFilter.class
+com\akotti\apigateway\ApiGatewayApplication.class
+com\akotti\apigateway\filter\JwtAuthFilter$Config.class

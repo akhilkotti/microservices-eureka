@@ -1,0 +1,8 @@
+com\akotti\auth\service\impl\UserServiceImpl.class
+com\akotti\auth\service\UserService.class
+com\akotti\auth\controller\AuthController.class
+com\akotti\auth\config\AuthConfig.class
+com\akotti\auth\AuthServiceApplication.class
+com\akotti\auth\entity\User.class
+com\akotti\auth\config\SecurityConfig.class
+com\akotti\auth\repository\UserRepository.class

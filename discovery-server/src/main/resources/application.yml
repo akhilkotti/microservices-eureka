@@ -1,0 +1,20 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: discovery-server
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    registry-fetch-interval-seconds: 5
+  server:
+    enable-self-preservation: true
+    renewal-percent-threshold: 0.85		
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+logging:
+  level:
+    'com.netflix.discovery': DEBUG
+    'org.springframework.cloud.netflix.eureka': DEBUG
