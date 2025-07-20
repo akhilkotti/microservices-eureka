@@ -1,7 +1,0 @@
-com\akotti\product\controller\ProductController.class
-com\akotti\product\service\impl\ProductServiceImpl.class
-com\akotti\product\ProductServiceApplication.class
-com\akotti\product\entity\Product.class
-com\akotti\product\service\ProductService.class
-com\akotti\product\entity\Product$ProductBuilder.class
-com\akotti\product\repository\ProductRepository.class
