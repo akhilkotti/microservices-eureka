@@ -43,9 +43,9 @@ a) Register User
     Content-Type: application/json
     
     {
-      "username": "testuser",
-      "password": "testpass",
-      "email": "test@example.com",
+      "username": "akhil",
+      "password": "akhilpwd",
+      "email": "akhil@example.com",
       "role": "USER"
     }
 
@@ -55,8 +55,8 @@ b) Login to Get JWT Token
     Content-Type: application/json
     
     {
-      "username": "testuser",
-      "password": "testpass"
+      "username": "akhil",
+      "password": "akhilpwd"
     }
     
     Response: You should receive a JWT token like eyJhbGciOiJIUzI1NiJ9...
@@ -70,10 +70,10 @@ c) Add Product
     Content-Type: application/json
     
     {
-      "name": "Apple",
-      "description": "Fresh apple",
-      "price": 10.5,
-      "quantity": 100
+      "name": "Elfbar",
+      "description": "Ellfbar RayD3",
+      "price": 2700.00,
+      "quantity": 1
     }
 
 d) Get Products
