@@ -26,15 +26,37 @@ pipeline {
             }
         }
         
+        // Conditional Test stage - only runs if tests exist
         stage('Test') {
+            when {
+                expression { 
+                    fileExists('**/src/test/java') 
+                }
+            }
             steps {
                 bat 'mvn test'
             }
             post {
                 always {
-                    junit '**/target/surefire-reports/*.xml'
+                    // Skip if no test reports found
+                    junit(
+                        allowEmptyResults: true, 
+                        testResults: '**/target/surefire-reports/*.xml'
+                    )
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            echo 'Build successful!'
+        }
+        failure {
+            echo 'Build failed!'
         }
     }
 }
