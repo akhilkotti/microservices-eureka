@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    // Define polling trigger in Jenkinsfile
+    triggers {
+        pollSCM('H/5 * * * *')  // Poll every 5 minutes
+    }
+    
     tools {
         jdk 'jdk21'  // Match Jenkins JDK configuration name
         maven 'maven' // Match Jenkins Maven configuration name
